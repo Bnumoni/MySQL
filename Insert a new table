@@ -1,0 +1,7 @@
+USE newest_db;
+
+CREATE TABLE email_subscribers (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    signup_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
